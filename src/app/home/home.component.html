@@ -1,0 +1,67 @@
+
+    <div class="viewed"></div>
+
+  
+      <div class="">
+<div class="row m-0 py-3">
+    <div class="col-md-6"></div>
+    <div class="col-md-2">
+        <p class="pt-2"><i class="fa fa-map-marker"></i> Bandar Puteri Puchong</p>
+    </div>
+    <div class="col-md-4">
+       
+          <form>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+    </div>
+</div>
+<div class="row m-0 bg py-5">
+<div class="col-md-3 ">
+<div class="parcel">
+    <img class="img" src="./../../assets/images/parcel.jpeg">
+    <h3 class="p-text card-text text-center">Parcels</h3>
+</div>
+</div>
+<div class="col-md-9">
+    <owl-carousel-o [options]="customOptions1">
+    
+        <ng-container *ngFor="let picture of pictures">
+          <ng-template carouselSlide>
+              <div class="background">
+                <img class="" [src]="picture.src"  [alt]="picture.alt">
+              </div>
+            <p class="card-text px-1 m-0 text-center p-text">{{picture.text}}</p>
+          </ng-template>
+        </ng-container>
+       
+      </owl-carousel-o>
+</div>
+</div>
+        
+<br><br>
+
+
+    <owl-carousel-o [options]="customOptions">
+    
+      <ng-container *ngFor="let slide of slidesStore">
+        <ng-template carouselSlide [id]="slide.id">
+          <div class="card" >
+            <img class="image" [src]="slide.src"  [alt]="slide.alt">
+            <div class="card-body">
+              <h5 class="card-title px-1">{{slide.title}}</h5>
+              <p class="card-text m-0"><i class="fa fa-map-marker"></i> &nbsp;{{slide.distance}}</p>
+              <p class="card-text px-1 m-0">{{slide.text}}</p>
+            </div>
+          </div>
+        </ng-template>
+      </ng-container>
+     
+    </owl-carousel-o>
+</div>

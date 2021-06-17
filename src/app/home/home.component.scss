@@ -1,0 +1,48 @@
+
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+owl-theme .owl-nav [class*='owl-'] {
+color: #FFF;
+font-size: 14px;
+margin: 5px;
+border: solid black !important;
+border-width: 0 3px 3px 0 !important;
+padding: 3px !important;
+display: inline-block;
+cursor: pointer;
+transform: rotate(
+-45deg
+) !important;
+}
+.card {
+border-radius: 10px;
+height: 385px;
+
+}
+.image {
+border-radius: 10px 10px 0 0;
+}
+.card:hover {
+
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-text {
+color:#615d5d;
+}
+.background {
+background-color: gray;
+border-radius: 20px;
+}
+.bg {
+background-color: #eef2f3eb;
+}
+.p-text {
+font-family: popins;
+font-size: 20px;    
+}
+
+.parcel .img {
+    width: 100%;
+    padding: 0px 54px;
+}

@@ -1,0 +1,103 @@
+<div class="header py-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mobile">
+                <div class="rounded-circle bg">
+                    <img class="w-100" src="./../../assets/images/carihub_blue.png">
+                </div>
+            </div>
+            <div class="col-md-8 mobile">
+               
+
+                
+<div class="topnav nav nav-tabs" id="myTopnav" >
+    <a  class="nav-item " routerLinkActive="active" [routerLinkActiveOptions] ='{exact: true}' routerLink="/">Home</a>
+    <a  class="nav-item" routerLinkActive="active" routerLink="/add-parcel">Add parcel</a>
+    <a  class="nav-item" routerLinkActive="active" routerLink="/my-orders">My orders</a>
+    <a  class="nav-item" routerLinkActive="active" routerLink="/profile">Profile</a>
+    
+    <a  class="openbtn"(click)='openNav()'routerLinkActive="active" >Login  
+    </a>
+    <a href="#" class="icon" (click)="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div  id="mySidebar" class="sidebar"  *ngIf = 'isShown'>
+    <a href="#" class="closebtn" (click)='closeNav()' >×</a>
+    <div class="rounded-circle bg1">
+        <img class="w-100" src="./../../assets/images/carihub_blue.png">
+    </div>
+    <br>
+<div class="container w-75">
+    <form  >
+        <div class="form-group ">
+          <input type="email" class="form-control" id="email" placeholder="Email/ Mobile Number">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="pwd" placeholder="password">
+        </div>
+       <p class="text-white"> &nbsp; &nbsp;Forget Password</p>
+        <button type="submit" class="btn btn-default button text-uppercase ">Sign in</button>
+      </form>
+
+      <h3 class="text-center text-white py-3 mb-0" >OR</h3>
+      <button class="btn btn-default button1 text-white text-capitalize"><i class="fa fa-google-plus"></i> Sign in with google</button>
+    <h3 class="text-white py-3">&nbsp; &nbsp;Don't have account?<span class="sign text-capitalize" (click)='openNav1()'> Sign up</span></h3>
+</div>
+   
+  </div>
+  
+
+
+
+<div  id="mySidebar" class="sidebar"  *ngIf = 'isShow'>
+    <a href="#" class="closebtn" (click)='closeNav1()' >×</a>
+    <div class="rounded-circle bg1">
+        <i class="fa fa-user fa-3x w-100"></i>
+    </div>
+    <br>
+<div class="container w-75">
+    <h2 class="text-white text-center">Create <span class="font-family-bold">Account</span></h2>
+    <hr class="hr">
+    <form  >
+        <div class="form-group">
+            <input type="text" class="form-control" id="uname" placeholder="Username">
+          </div>
+          
+        <div class="form-group ">
+          <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="pwd" placeholder="password">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" id="cpwd" placeholder="Re-enter password">
+          </div>
+        <button type="submit" class="btn btn-default button text-uppercase ">Create</button>
+      </form>
+
+</div>
+   
+  </div>
+  
+  
+  
